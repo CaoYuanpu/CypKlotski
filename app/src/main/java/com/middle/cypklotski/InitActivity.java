@@ -39,7 +39,7 @@ public class InitActivity extends AppCompatActivity {
         Log.i("android_id", android_id);
         DBHelper dbHelper = new DBHelper(InitActivity.this, "usr_db", null, 1);
         SQLiteDatabase db = dbHelper.getWritableDatabase();
-        //db.delete("user", "id=?", new String[] {android_id});
+        db.delete("user", "id=?", new String[] {android_id});
         /*db.delete("user", "name=?", new String[] {"LiuBei1"});
         db.delete("user", "name=?", new String[] { "Guanyu1"});
         db.delete("user", "name=?", new String[] {"CaoCao1"});
