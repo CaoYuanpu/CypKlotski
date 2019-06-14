@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    tools:context=".MainGame">
+
+    <RelativeLayout
+        android:id="@+id/game_panel"
+        android:layout_width="320dp"
+        android:layout_height="400dp"
+        android:background="#4DFCFCFC"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/win"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/guankia"
+            android:text="已破"
+            android:textColor="#FFFFFF"
+            android:textSize="64sp"
+            android:onClick="returnReply"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/guankia_name"
+        android:layout_width="160dp"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:text="四个字呦"
+        android:textColor="#000000"
+        android:textSize="40sp"
+        app:layout_constraintStart_toStartOf="@+id/game_panel"
+        tools:layout_editor_absoluteY="81dp" />
+
+    <TextView
+        android:id="@+id/current_score"
+        android:layout_width="130dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:text="当前步数: 0"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/game_panel"
+        app:layout_constraintEnd_toEndOf="@+id/game_panel" />
+
+    <TextView
+        android:id="@+id/best_score"
+        android:layout_width="130dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="最佳步数: 无"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/current_score"
+        app:layout_constraintEnd_toEndOf="@+id/game_panel" />
+
+    <Button
+        android:id="@+id/withdraw"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/guankia"
+        android:onClick="withdrawOperation"
+        android:text="悔棋"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/game_panel"
+        app:layout_constraintTop_toBottomOf="@+id/game_panel" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/guankia"
+        android:text="返回"
+        android:textColor="#FFF"
+        android:textSize="20dp"
+        android:onClick="backChoose"
+        app:layout_constraintStart_toEndOf="@+id/withdraw"
+        app:layout_constraintTop_toBottomOf="@+id/game_panel" />
+
+</android.support.constraint.ConstraintLayout>

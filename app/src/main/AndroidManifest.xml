@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.middle.cypklotski">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Klotski"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.middle.cypklotski.Main2Activity" android:label="Klotski"
+            android:parentActivityName="com.middle.cypklotski.InitActivity"></activity>
+        <activity
+            android:name="com.middle.cypklotski.RankingActivity"
+            android:label="Klotski"
+            android:parentActivityName="com.middle.cypklotski.InitActivity" />
+        <activity
+            android:name="com.middle.cypklotski.InitUserActivity"
+            android:label="Klotski"
+            android:parentActivityName="com.middle.cypklotski.InitActivity" />
+        <activity
+            android:name="com.middle.cypklotski.MainGame"
+            android:label="Klotski"
+            android:parentActivityName="com.middle.cypklotski.MainActivity" />
+        <activity
+            android:name="com.middle.cypklotski.MainActivity"
+            android:label="Klotski"
+            android:parentActivityName="com.middle.cypklotski.InitActivity" />
+        <activity android:name="com.middle.cypklotski.InitActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

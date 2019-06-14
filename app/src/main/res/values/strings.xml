@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Cyp Klotski</string>
+    <string name="db_name">user</string>
+</resources>

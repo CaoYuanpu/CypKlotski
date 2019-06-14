@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/scene0"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/guankia"
+        android:hint="0"
+        android:onClick="chooseScene"
+        android:text="七步成诗"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scene1" />
+
+    <Button
+        android:id="@+id/scene1"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/guankia"
+        android:backgroundTint="#80000000"
+        android:enabled="false"
+        android:hint="1"
+        android:onClick="chooseScene"
+        android:text="海阔天空"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scene5" />
+
+    <Button
+        android:id="@+id/scene2"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/guankia"
+        android:backgroundTint="#80000000"
+        android:enabled="false"
+        android:hint="2"
+        android:onClick="chooseScene"
+        android:text="诸葛羽扇"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scene5" />
+
+    <Button
+        android:id="@+id/scene3"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/guankia"
+        android:backgroundTint="#80000000"
+        android:enabled="false"
+        android:hint="3"
+        android:onClick="chooseScene"
+        android:text="似远实近"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scene4" />
+
+    <Button
+        android:id="@+id/scene4"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="85dp"
+        android:layout_marginRight="85dp"
+        android:background="@drawable/guankia"
+        android:backgroundTint="#80000000"
+        android:hint="4"
+        android:onClick="chooseScene"
+        android:text="高枕无忧"
+        android:enabled="false"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scene6" />
+
+    <Button
+        android:id="@+id/scene5"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="85dp"
+        android:layout_marginLeft="85dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/guankia"
+        android:backgroundTint="#80000000"
+        android:hint="5"
+        android:enabled="false"
+        android:onClick="chooseScene"
+        android:text="没落兵种"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scene6" />
+
+    <Button
+        android:id="@+id/scene6"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/guankia"
+        android:backgroundTint="#80000000"
+        android:enabled="false"
+        android:hint="6"
+        android:onClick="chooseScene"
+        android:text="近在一步"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/level0" />
+
+    <TextView
+        android:id="@+id/level0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="520dp"
+        android:text="小试北斗"
+        android:textColor="#000000"
+        android:textSize="54sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>
+
